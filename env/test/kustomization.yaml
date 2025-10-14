@@ -1,7 +1,8 @@
 resources:
-  - ../../base
-
+- ../../base
 nameSuffix: -test
-
 patchesStrategicMerge:
-  - replica-patch.yaml
+- replica-patch.yaml
+images:
+- name: ghcr.io/martinvasseur-lab/kargo-project
+  newTag: 1.0.0
