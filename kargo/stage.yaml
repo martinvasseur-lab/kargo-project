@@ -20,9 +20,9 @@ spec:
       - name: imageTag
         value: 1.0.1
       - name: srcPath
-        value: ./src
+        value: ./repo
       - name: outPath
-        value: ./out
+        value: ./repo
       - name: targetBranch
         value: stage/${{ ctx.stage }}
       steps:
