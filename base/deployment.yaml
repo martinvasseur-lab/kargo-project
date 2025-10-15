@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: nginx-deployment
   labels:
     app: nginx
-  name: nginx-deployment-test
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: ghcr.io/martinvasseur-lab/kargo-project:1.0.0
-        name: nginx
+      - name: nginx
+        image: ghcr.io/martinvasseur-lab/kargo-project:1.0.1
         ports:
         - containerPort: 80
