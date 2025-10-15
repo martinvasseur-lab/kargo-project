@@ -1,7 +1,0 @@
-resources:
-  - ../../base
-
-nameSuffix: -prod
-
-patchesStrategicMerge:
-  - replica-patch.yaml
