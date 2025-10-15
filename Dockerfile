@@ -2,4 +2,4 @@
 FROM nginx:alpine
 
 # Copie ton fichier HTML personnalisé dans le dossier web de Nginx
-COPY index.html /usr/share/nginx/html/index.html
+COPY app/index.html /usr/share/nginx/html/index.html
